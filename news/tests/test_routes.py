@@ -12,6 +12,7 @@ from news.models import Comment, News
 # Получаем модель пользователя.
 User = get_user_model()
 
+
 class TestRoutes(TestCase):
 
     @classmethod

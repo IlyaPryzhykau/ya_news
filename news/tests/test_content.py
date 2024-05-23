@@ -1,14 +1,11 @@
 from django.conf import settings
 from django.test import TestCase
-# Импортируем функцию reverse(), она понадобится для получения адреса страницы.
 from django.urls import reverse
-# Импортируем функцию для получения модели пользователя.
 from django.contrib.auth import get_user_model
 from django.utils import timezone
 
 from datetime import datetime, timedelta
 
-# Дополнительно к News импортируем модель комментария.
 from news.models import Comment, News
 from news.forms import CommentForm
 
